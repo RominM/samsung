@@ -1,0 +1,11 @@
+{
+  "name": "samsung",
+  "version": "1.0.0",
+  "description": "duplicate samsung website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/master.scss:./css/style.css --style compressed"
+  },
+  "author": "",
+  "license": "ISC"
+}
