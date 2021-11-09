@@ -1,0 +1,22 @@
+.nav_2 {
+   width: 25%;
+   margin: 35px 5px 35px 75px;
+   @include headFamily;
+
+   .forPro {
+      display: flex;
+      justify-content: space-between;
+
+      &__li {
+         a {
+            @include borderNavLi;
+         }
+      }
+
+      &__li:hover {
+         a {
+            @include hoverBorderNavLi;
+         }
+      }
+   }
+}

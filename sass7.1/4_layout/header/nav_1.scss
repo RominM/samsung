@@ -1,0 +1,22 @@
+.nav_1 {
+   width: 50%;
+   margin: 35px 37px 35px 50px;
+   @include headFamily;
+
+   .products {
+      display: flex;
+      justify-content: space-between;
+
+      &__li {
+         a {
+            @include borderNavLi;
+         }
+      }
+
+      &__li:hover {
+         a {
+            @include hoverBorderNavLi;
+         }
+      }
+   }
+}

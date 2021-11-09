@@ -1,0 +1,16 @@
+header {
+   padding-left: 3%;
+   padding-right: 3%;
+   .main-nav-primary {
+      display: flex;
+      justify-content: space-between;
+   }
+   .main-nav-primary::after {
+      position: absolute;
+      content: '';
+      width: 90%;
+      height: 1px;
+      background-color: rgb(238, 238, 238);
+      margin: 90px auto;
+   }
+}

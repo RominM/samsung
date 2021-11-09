@@ -1,2 +1,10 @@
-@import "./3_components/logo.scss";
-@import "./4_layout/header.scss";
+@import "./1_abstracts/mixins.scss";
+
+@import "./2_bases/typo.scss";
+
+// HEADER
+@import "./4_layout/header/header.scss";
+@import "./4_layout/header/logo.scss";
+@import "./4_layout/header/nav_1.scss";
+@import "./4_layout/header/nav_2.scss";
+@import "./4_layout/header/customer.scss";

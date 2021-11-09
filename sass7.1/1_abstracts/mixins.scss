@@ -1,0 +1,17 @@
+@mixin headFamily {
+   font-family: $samBol;
+   font-size: 1.3vh;
+}
+
+@mixin borderNavLi {
+   margin: 5px;
+   white-space: nowrap;
+   border-radius: 25px;
+   padding: 10px;
+   cursor: pointer;
+}
+
+@mixin hoverBorderNavLi {
+   background-color: #000;
+   color: #fff;
+}

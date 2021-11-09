@@ -1,7 +1,8 @@
 export const createHeader = () => {
    logo();
    productsNav();
-   customersNav();
+   forProNav();
+   customerNav();
 }
 
 const logo = () => {
@@ -34,7 +35,7 @@ const productsNav = () => {
       'TV & Audio',
       'Électroménager',
       'Informatique',
-      'Display',
+      'Displays',
       'Maison Connectée',
       'Offre',
       '#Sélections'
@@ -42,7 +43,7 @@ const productsNav = () => {
 
    for (let i = 0; i < products.length; i++) {
       const li = document.createElement('li');
-      li.classList.add('.product__li');
+      li.classList.add('products__li');
 
       const a = document.createElement('a');
       a.href = '#';
@@ -56,33 +57,58 @@ const productsNav = () => {
    mainNavPrimary.append(nav1)
 }
 
-const customersNav = () => {
+const forProNav = () => {
    const mainNavPrimary = document.querySelector('.main-nav-primary');
 
    const nav2 = document.createElement('nav');
    nav2.classList.add('nav_2');
 
-   const ulCustomer = document.createElement('ul');
-   ulCustomer.classList.add('customer');
+   const ulForPro = document.createElement('ul');
+   ulForPro.classList.add('forPro');
 
    const customer = [
       'Explore',
       'Assistance',
       'Pour les professionnels'
-   ]
+   ];
 
    for (let i = 0; i < customer.length; i++) {
       const li = document.createElement('li');
-      li.classList.add('.customer__li');
+      li.classList.add('forPro__li');
 
       const a = document.createElement('a');
       a.href = '#';
       a.innerHTML += customer[i];
 
       li.append(a);
-      ulCustomer.append(li)      
+      ulForPro.append(li);     
    }
 
-   nav2.append(ulCustomer);
+   nav2.append(ulForPro);
    mainNavPrimary.append(nav2);
+}
+
+const customerNav = () => {
+   const mainNavPrimary = document.querySelector('.main-nav-primary');
+   const divCustomer = document.createElement('div');
+   divCustomer.classList.add('divCustomer');
+   
+   const search = document.createElement('a');
+   const searchImg = document.createElement('img');
+   searchImg.src = './../../images_samsung/search-solid.svg';
+
+   const cart = document.createElement('a');
+   const cartImg = document.createElement('img');
+   cartImg.src = './../../images_samsung/shopping-cart-solid.svg';
+
+   const user = document.createElement('a');
+   const userImg = document.createElement('img');
+   userImg.src = './../../images_samsung/user-regular.svg';
+
+   search.append(searchImg);
+   cart.append(cartImg);
+   user.append(userImg);
+
+   divCustomer.append(search, cart, user);
+   mainNavPrimary.append(divCustomer);
 }
