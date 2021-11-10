@@ -4,9 +4,12 @@
 @import "./2_bases/typo.scss";
 
 // HEADER
+@import "./3_components/customer.scss";
+@import "./3_components/buy_btn.scss";
 @import "./4_layout/header/header.scss";
 @import "./4_layout/header/nav_1.scss";
 @import "./4_layout/header/nav_2.scss";
-@import "./4_layout/header/customer.scss";
 @import "./4_layout/header/nav_3.scss";
-@import "./4_layout/header/buy_btn.scss";
+
+// MAIN
+@import "./4_layout/main/main.scss";
