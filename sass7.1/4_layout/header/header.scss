@@ -2,8 +2,17 @@ header {
    padding-left: 3%;
    padding-right: 3%;
    .main-nav-primary {
-      display: flex;
-      justify-content: space-between;
+      @include flexNav;
+      margin-top: 20px;
+      a {
+         max-width: 105;
+         margin: auto;
+         h1 {
+            img {
+               width: 100px;
+            }      
+         }
+      }
    }
    .main-nav-primary::after {
       position: absolute;
@@ -11,6 +20,15 @@ header {
       width: 90%;
       height: 1px;
       background-color: rgb(238, 238, 238);
-      margin: 90px auto;
+      margin: 50px auto;
+   }
+   .main-nav-secondary {
+      @include flexNav;
+      margin-top: 32px;
+
+      h2 {
+         font-family: $secondaryFont;
+         font-size: 1.5em;
+      }
    }
 }

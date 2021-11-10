@@ -1,8 +1,5 @@
 .divCustomer {
-   display: flex;
-   justify-content: space-between;
-   width: 7%;
-   margin: 26px 30px 26px 20px;
+   @include flexNav;
    img {
       width: 20px;
       cursor: pointer;

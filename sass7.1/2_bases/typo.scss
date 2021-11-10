@@ -1,6 +1,12 @@
 @font-face {
-   font-family: samBol;
+   font-family: OneBold;
+   src: url('./../../fonts_samsung/SamsungOne-700.ttf');
+}
+
+@font-face {
+   font-family: NeoBold;
    src: url('./../../fonts_samsung/samsungsharpsans-bold.otf');
 }
 
-$samBol: samBol, sans-serif;
+$primaryFont: OneBold, sans-serif;
+$secondaryFont: NeoBold, sans-serif;

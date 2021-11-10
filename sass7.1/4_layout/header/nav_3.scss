@@ -1,0 +1,25 @@
+.nav_3 {
+   font-family: $primaryFont;
+   font-size: 1.3vh;
+   .global {
+      @include flexNav;
+      &__li {
+         margin-right: 50px;
+         a {
+            @include borderNavLi;
+            text-align: center;
+            width: auto;
+            padding: 0;
+            margin: auto;
+         }
+         a::after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 4px;
+            margin: 15px auto 0 auto;
+            background-color: $secondaryColor;
+         }
+      }
+   }
+}

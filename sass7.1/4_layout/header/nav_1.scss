@@ -1,12 +1,10 @@
 .nav_1 {
-   width: 50%;
-   margin: 35px 37px 35px 50px;
    @include headFamily;
 
    .products {
-      display: flex;
-      justify-content: space-between;
-
+      @include flexNav;
+      margin-top: 15px;
+      margin-right: 50px;
       &__li {
          a {
             @include borderNavLi;

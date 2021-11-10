@@ -1,17 +1,22 @@
 @mixin headFamily {
-   font-family: $samBol;
-   font-size: 1.3vh;
+   font-family: $primaryFont;
+   font-size: 1.5vh;
 }
 
 @mixin borderNavLi {
-   margin: 5px;
+   // margin: 5px;
    white-space: nowrap;
    border-radius: 25px;
    padding: 10px;
    cursor: pointer;
 }
 
+@mixin flexNav {
+   display: flex;
+   justify-content: space-between;
+}
+
 @mixin hoverBorderNavLi {
-   background-color: #000;
-   color: #fff;
+   background-color: $secondaryColor;
+   color: $primaryColor;
 }
