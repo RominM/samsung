@@ -1,0 +1,23 @@
+.head-section {
+   position: relative;
+   width: 100%;
+   height: 800px;
+   margin: auto;
+   background-color: $secondaryColor;
+   .head-section_para {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $primaryColor;
+      line-height: 45px;
+      h3 {
+         font-family: $secondaryFont;
+         font-size: 4em;
+      }
+      .head-section_span {
+         font-family: $primaryFont;
+         font-size: 1.7em;
+      }
+   }
+}

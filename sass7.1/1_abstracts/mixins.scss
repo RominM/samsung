@@ -1,10 +1,9 @@
 @mixin headFamily {
    font-family: $primaryFont;
-   font-size: 1.5vh;
+   font-size: .85em;
 }
 
 @mixin borderNavLi {
-   // margin: 5px;
    white-space: nowrap;
    border-radius: 25px;
    padding: 10px;

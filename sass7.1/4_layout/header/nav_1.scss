@@ -1,16 +1,14 @@
 .nav_1 {
    @include headFamily;
-
+   margin-right: 50px;
    .products {
       @include flexNav;
-      margin-top: 15px;
-      margin-right: 50px;
       &__li {
+         margin-top: 12px;
          a {
             @include borderNavLi;
          }
       }
-
       &__li:hover {
          a {
             @include hoverBorderNavLi;

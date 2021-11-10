@@ -8,7 +8,7 @@ export const firstHeadPart = () => {
 const logo = () => {
    const mainNavPrimary = document.querySelector('.main-nav-primary');
    const linkHome = document.createElement('a');
-   linkHome.classList.add('linkhome');
+   linkHome.classList.add('linkHome');
    linkHome.href = "./../../index.html";
 
    const h1 = document.createElement('h1');

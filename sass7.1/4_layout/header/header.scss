@@ -3,10 +3,12 @@ header {
    padding-right: 3%;
    .main-nav-primary {
       @include flexNav;
-      margin-top: 20px;
-      a {
-         max-width: 105;
-         margin: auto;
+      width: 100%;
+      max-width: 1400px;
+      margin: 21px auto 0 auto;
+      .linkHome {
+         max-width: 105px;
+         margin: auto 60px auto 0;
          h1 {
             img {
                width: 100px;
@@ -17,18 +19,20 @@ header {
    .main-nav-primary::after {
       position: absolute;
       content: '';
-      width: 90%;
+      width: 80%;
       height: 1px;
       background-color: rgb(238, 238, 238);
-      margin: 50px auto;
+      margin: 60px auto 0 auto;
    }
    .main-nav-secondary {
       @include flexNav;
-      margin-top: 32px;
-
+      width: 100%;
+      max-width: 1400px;
+      margin: 30px auto 10px auto;
       h2 {
          font-family: $secondaryFont;
          font-size: 1.5em;
+         margin-right: 55px;
       }
    }
 }

@@ -1,26 +1,21 @@
 export const secondHeadPart = () => {
-   titleHead();
    globalNav();
    buyItBtn();
-};
-
-const titleHead = () => {
-   const mainNavSecondary = document.querySelector('.main-nav-secondary');
-
-   const h2 = document.createElement('h2');
-   h2.innerHTML = 'Neo QLED';
-
-   mainNavSecondary.append(h2);
 };
 
 const globalNav = () => {
    const mainNavSecondary = document.querySelector('.main-nav-secondary');
    
+   const h2 = document.createElement('h2');
+   h2.innerHTML = 'Neo QLED';
+
    const nav3 = document.createElement('nav');
    nav3.classList.add('nav_3');
 
    const ulGlobal = document.createElement('ul');
    ulGlobal.classList.add('global');
+
+   ulGlobal.append(h2);
 
    const global = [
       'Présentation',
@@ -41,7 +36,6 @@ const globalNav = () => {
       li.append(a);
       ulGlobal.append(li);
    }
-
    nav3.append(ulGlobal);
    mainNavSecondary.append(nav3);
 };
