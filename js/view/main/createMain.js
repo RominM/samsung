@@ -5,6 +5,17 @@ export const createMain = () => {
 const headSection = () => {
    const section = document.querySelector('.head-section');
 
+   const bgHeadSection = document.createElement('div');
+   bgHeadSection.classList.add('head-section__bg');
+
+   const bgImg = document.createElement('img');
+   bgImg.classList.add('bg-img');
+   bgImg.src = './../../../images_samsung/neo-top-bg.webp';
+
+   const bgImgAbs = document.createElement('img');
+   bgImgAbs.src = './../../../images_samsung/tv-top.webp';
+   bgImgAbs.classList.add('tv-img')
+
    const p = document.createElement('p');
    p.classList.add('head-section_para');
 
@@ -16,5 +27,7 @@ const headSection = () => {
    headSectionSpan.innerHTML = 'L\'excellence sans compromis';
 
    p.append(h3, headSectionSpan);
-   section.append(p);
+   
+   bgHeadSection.append(bgImg, bgImgAbs);
+   section.append(bgHeadSection, p);
 }
