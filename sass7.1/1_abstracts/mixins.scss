@@ -19,3 +19,17 @@
    background-color: $secondaryColor;
    color: $primaryColor;
 }
+
+@mixin btn1 {
+   color: $primaryColor;
+   cursor: pointer;
+   font-size: 1.1em;
+   margin: 5px;
+}
+
+@mixin btn_after {
+   content: '';
+   border-right: solid 2px;
+   padding-left: 15px;
+   text-align: center;
+}

@@ -13,21 +13,21 @@
       line-height: 60px;
       h3 {
          font-family: $secondaryFont;
-         font-size: 4.2em;
+         font-size: 4.3em;
       }
       .head-section_span {
          font-family: $primaryFont;
-         font-size: 1.7em;
+         font-size: 1.8em;
       }
    }
    &__bg {
       width: 100%;
-      .bg-img {
+      .bg-top{
          display: block;
          width: auto;
          margin: auto;
       }
-      .tv-img {
+      .tv-top {
          position: absolute;
          top: 46%;
          left: 63%;

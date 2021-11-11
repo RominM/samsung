@@ -1,0 +1,10 @@
+aside {
+   position: absolute;
+   top: 10%;
+   left: 78%;
+   div {
+      background-color: rgba($secondaryColor, 0.5);
+      margin-bottom: 5px;
+      cursor: pointer;
+   }
+}
