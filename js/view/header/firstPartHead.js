@@ -30,7 +30,7 @@ const productsNav = () => {
    const ulProduts = document.createElement('ul');
    ulProduts.classList.add('products');
 
-   const products = [
+   const liProducts = [
       'Mobiles', 
       'TV & Audio',
       'Électroménager',
@@ -41,17 +41,24 @@ const productsNav = () => {
       '#Sélections'
    ];
 
-   for (let i = 0; i < products.length; i++) {
+   liProducts.forEach((product, i) => {
+      
       const li = document.createElement('li');
       li.classList.add('products__li');
 
       const a = document.createElement('a');
+      if(product.includes('&') || product.includes(' ')) {
+         a.id = product.replace('&','_').split(' ').join('') + '_' + i; 
+      } else {
+         a.id = product + '_' + i;
+      }
+      
       a.href = '#';
-      a.innerHTML += products[i];
+      a.innerHTML = product;
 
       li.append(a);
       ulProduts.append(li)
-   };
+   });
 
    nav1.append(ulProduts)
    mainNavPrimary.append(nav1)

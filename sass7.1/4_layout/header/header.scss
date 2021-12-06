@@ -1,6 +1,7 @@
 header {
    padding-left: 3%;
    padding-right: 3%;
+   padding-top: 10px;
    .main-nav-primary {
       @include flexNav;
       width: 100%;
